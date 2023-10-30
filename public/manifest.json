@@ -2,7 +2,7 @@
   "api": [
     {
       "name": "query",
-      "url": "https://search-engine.wuran.link/api/v1",
+      "url": "https://chat-plugin-search-engine-five.vercel.app/api/v1",
       "description": "查询搜索引擎获取信息",
       "parameters": {
         "properties": {
