@@ -1,9 +1,10 @@
 import { OrganicResults, Result } from '../../src/type';
-
+import { Settings } from './_types';
 
 const BASE_URL = 'https://search.wuran.link/search';
 
-const fetchResult = async (args: { query: string }): Promise<Result> => {
+const fetchResult = async (args: { query: string }, settings: Settings): Promise<Result> => {
+  const apiKey = settings.SERPAPI_API_KEY;
   
   const { default: querystring } = await import('query-string');
 
